@@ -1,6 +1,17 @@
 @font-face {
   font-family: "Title Font";
-  src: url('../fonts/titlefont.ttf');
+  src: url('../fonts/titlefont.ttf') format('truetype');
+}
+.ion-billboard::before{
+  content:url('../img/billboardIcon.png');
+  align-content: center;
+}
+.ion-location-strong::before{
+  content: url('../img/locationIcon.png');
+}
+.ion-ios-chatboxes::before{
+  content: url('../img/chatIcon.png');
+  padding:2px;
 }
 #map {
   height: 450px;
@@ -8,15 +19,15 @@
 }
 .loginBackground{
   background-color:#262927;
+  text-align: center;
 }
 .loginTitle{
   color:whitesmoke;
-  font-size: 36px;
+  font-size: 72px;
   font-family: "Title Font";
 }
 .couchIcon{
   width: 180px;
-  height: 180px;
 }
 .loginBtn{
   height:220px;
@@ -25,5 +36,16 @@
   border: none;
   box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.50);
   background-color: #5A6B78;
-  margin-left:21%;
+  margin-top:20%;
+}
+.popup{
+  border-radius: 5% !important;
+  width: 74% !important;
+}
+.loginForm{
+  border:none !important;
+  background-color: white;
+}
+.loginInput{
+  padding-left:20px !important;
 }

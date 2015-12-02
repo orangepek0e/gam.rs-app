@@ -79,6 +79,15 @@ var app = angular.module('starter', [
         }
       }
     })
+    .state('tab.location', {
+      url: '/location',
+      views: {
+        'tab-location': {
+          templateUrl: 'templates/tab-location.html',
+          controller: 'LocationCtrl'
+        }
+      }
+    })
 
   .state('tab.account', {
     url: '/account',
@@ -91,6 +100,6 @@ var app = angular.module('starter', [
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/login');
 
 });
