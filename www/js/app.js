@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
+// 'starter.controllers' is found in post-modal.js
 var app = angular.module('starter', [
   'ionic',
   'ngCordova',
@@ -33,7 +33,7 @@ var app = angular.module('starter', [
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
+  // Each state's controller can be found in post-modal.js
   $stateProvider
 
     .state('login', {
@@ -65,7 +65,7 @@ var app = angular.module('starter', [
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
+          templateUrl: 'templates/post-modal.html',
           controller: 'ChatsCtrl'
         }
       }
@@ -79,6 +79,7 @@ var app = angular.module('starter', [
         }
       }
     })
+
     .state('tab.location', {
       url: '/location',
       views: {

@@ -1,20 +1,30 @@
 <ion-view view-title="Dashboard">
+
+  <div class="edit-button">
+         <span class="height-fix">
+            <a class="content" href="#/tab/chats">
+              <i class="ion-edit"> </i>
+            </a>
+         </span>
+  </div>
+
   <ion-content class="padding">
+
     <ion-item class="list card" ng-repeat="post in posts">
 
       <div class="item item-avatar">
-        <img src="avatar.jpg">
+        <img src={{post.post_userPhoto}}>
         <h2>{{post.title}}</h2>
-        <p>{{post.gameName}}, {{post.systemName}}</p>
+        <p class="postSubText">{{post.gameName}}, {{post.systemName}}</p>
       </div>
 
       <div class="item item-text-wrap">
-        <p>{{post.description}}</p>
+        <p class="postSubText">{{post.description}}</p>
       </div>
 
-      <a class="item item-icon-left assertive" href="#">
+      <a class="item item-icon-left assertive locationText" href="#">
         <i class="icon ion-location"></i>
-        user's location
+        {{post.userLongitude}} , {{post.userLatitude}}
       </a>
 
     </ion-item>

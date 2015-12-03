@@ -1,6 +1,6 @@
 'use strict';
 
-app.factory('Posts', function(FURL, $firebaseArray) {
+app.factory('Posts', function(FURL, $firebaseArray, Auth) {
   var ref = new Firebase(FURL);
   var posts = $firebaseArray(ref.child('posts'));
 
@@ -11,7 +11,12 @@ app.factory('Posts', function(FURL, $firebaseArray) {
     },
 
     savePost: function(post){
+
       var newPost = {
+        post_userPhoto: Auth.user.profile.gravatar,
+        post_userName: Auth.user.profile.name,
+        userLongitude: Auth.user.profile.userLongitude,
+        userLatitude: Auth.user.profile.userLatitude,
         title: post.title,
         gameName: post.gameName,
         systemName: post.systemName,

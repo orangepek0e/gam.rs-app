@@ -1,0 +1,31 @@
+<ion-view view-title="Write a new post">
+  <ion-content>
+    <div class="back-button">
+         <span class="height-fix">
+            <a class="content" href="#/tab/dash">
+              <i class="ion-close-round"> </i>
+            </a>
+         </span>
+    </div>
+    <ion-list>
+      <form ng-submit="button(post)" class="postForm">
+        <h1 class="postHeader">What're you playing?</h1>
+        <label class="item item-input postInput">
+          <input type="text" ng-model="post.title" placeholder="Title">
+        </label>
+        <label class="item item-input postInput">
+          <input type="text" ng-model="post.gameName" placeholder="Game">
+        </label>
+        <label class="item item-input postInput">
+          <input type="text" ng-model="post.systemName" placeholder="System">
+        </label>
+        <label class="item item-input postInput">
+          <textarea ng-model="post.description" placeholder="Description (Time, number of people wanted, etc)"></textarea>
+        </label>
+
+        <button type="submit" onclick="location.href='#/tab/dash' " class="button button-block button-dark">Submit</button>
+      </form>
+
+    </ion-list>
+  </ion-content>
+</ion-view>

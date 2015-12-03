@@ -2,19 +2,26 @@
   font-family: "Title Font";
   src: url('../fonts/titlefont.ttf') format('truetype');
 }
-.ion-billboard::before{
+.pane{
+  background-color: #D8D8D8;
+}
+.ion-billboard{
   content:url('../img/billboardIcon.png');
   align-content: center;
 }
-.ion-location-strong::before{
+.ion-location-strong{
   content: url('../img/locationIcon.png');
 }
-.ion-ios-chatboxes::before{
+.ion-ios-chatboxes{
   content: url('../img/chatIcon.png');
   padding:2px;
 }
+.gear-android{
+  content: url('../img/gear-a.png');
+}
 #map {
-  height: 450px;
+  height: 250px;
+  width:auto;
   margin: 0;
 }
 .loginBackground{
@@ -24,7 +31,15 @@
 .loginTitle{
   color:whitesmoke;
   font-size: 72px;
-  font-family: "Title Font";
+  font-family: 'Ramaraja', serif;
+
+}
+.loginText{
+  color: whitesmoke;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Ramaraja', serif;
+  margin-top: 5%;
 }
 .couchIcon{
   width: 180px;
@@ -48,4 +63,90 @@
 }
 .loginInput{
   padding-left:20px !important;
+}
+.tab-item {
+  padding-top:7px;
+  background-color: #363A38;
+  opacity: 1;
+}
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated{
+  opacity:.9;
+}
+.item {
+  padding-right: 0px;
+  background-color: white;
+  border-radius: 5px;
+}
+.locationText{
+  color:#892B22 !important;
+}
+.postSubText{
+  color:#5A6B78 !important;
+}
+.edit-button{
+  border-radius: 50%;
+  background-color: #892B22;
+  color:white;
+  width:40px;
+  height:40px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  float: right;
+  position: fixed;
+  z-index: 1000;
+  margin-left: 84%;
+  margin-top: 9%;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.back-button{
+  border-radius: 50%;
+  background-color: #fff;
+  color:white;
+  width:25px;
+  height:25px;
+  vertical-align: middle;
+  text-align:center;
+  padding-top: 3px;
+  padding-left: .5px;
+  font-size: 16px;
+  position: fixed;
+  z-index: 1000;
+  margin-left: 85%;
+  margin-top: 9%;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+.ion-edit::before{
+  color:white;
+}
+.locationLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+}
+.locationLoadText{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 5%;
+}
+.postForm{
+  width:85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+
+}
+.postHeader{
+  text-align: start;
+  padding-top: 1%;
+  color: #222222;
+  border-radius: 7%;
+  display: block;
+  opacity: .8;
+  font-family: 'Ramaraja', serif;
+}
+.postInput{
+  margin-bottom: 1% ;
 }
